@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    #LabelInput{
+        @apply w-full text-gray-900 dark:text-gray-300 text-sm font-semibold
+    }
+    #InputButtonIncrement{
+        @apply bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer
+    }
+    #InputButtonDerement{
+      @apply bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer
+    }
+    #Input{
+        @apply focus:outline-none text-center w-full bg-gray-300 font-semibold hover:text-black focus:text-black  md:text-base cursor-default flex items-center text-gray-700 outline-none
+    }
+    #InputSymbol{
+      @apply m-auto text-2xl font-thin
+    }
+    #InputOperationWrapper{
+      @apply flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1
+    }
+    #InputWrapper{
+      @apply flex flex-row items-center m-4
+    }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

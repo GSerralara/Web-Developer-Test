@@ -1,0 +1,12 @@
+{
+    "form": {
+        "Title": "Títol",
+        "Subtitle":"Subtítol",
+        "Description":"Descripció"
+    },
+    "event": {
+        "name": "Nom de l'esdeveniment", 
+        "capacity":"Capacitat"
+    },
+    "button":"Crear"
+}
