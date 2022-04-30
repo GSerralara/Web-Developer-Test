@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import './i18n/config';
-import { WithTranslation, withTranslation } from 'react-i18next';
+import { WithTranslation, withTranslation} from 'react-i18next';
 
 //import TabbedPane from './components/TabbedPane';
 import InputNumber from './components/InputNumber';
@@ -15,19 +15,23 @@ class App extends React.Component<WithTranslation,AppState>{
   constructor(props:WithTranslation) {
     super(props);
     this.state = { active:'' };
+    this.changeToCatalan = this.changeToCatalan.bind(this);
+    this.changeToEnglish = this.changeToEnglish.bind(this);
+    this.changeToPortuguese = this.changeToPortuguese.bind(this);
+    this.changeToSpanish = this.changeToSpanish.bind(this);
   }
   changeToCatalan(){
-    console.log(this.props)
+  
     this.props.i18n.changeLanguage('ca');
   }
   changeToSpanish(){
-    this.props.i18n.changeLanguage('es');
+    this.props.i18n?.changeLanguage('es');
   }
   changeToPortuguese(){
-    this.props.i18n.changeLanguage('pt');
+    this.props.i18n?.changeLanguage('pt');
   }
   changeToEnglish(){
-    this.props.i18n.changeLanguage('en');
+    this.props.i18n?.changeLanguage('en');
   }
   render(){
     //const { t } = useTranslation();
