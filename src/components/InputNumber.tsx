@@ -11,7 +11,8 @@ class InputNumber extends React.Component<INProps, INState>{
     
     constructor(props:INProps) {
         super(props);
-        this.state = { valueInput: props.valueInput || 0 };
+        this.state = { valueInput: 0 };
+        this.handleOnChange = this.handleOnChange.bind(this)
     }
     
     decrement() {
@@ -40,6 +41,7 @@ class InputNumber extends React.Component<INProps, INState>{
                         <span id="InputSymbol">−</span>
                     </button>
                     <input type="number" onChange={ e => this.handleOnChange(e) }
+                    value = {this.state.valueInput+''}
                     id="Input"/>
                     <button id="InputButtonIncrement" onClick={() => this.increment()} >
                         <span id="InputSymbol">+</span>
