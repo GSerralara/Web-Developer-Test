@@ -1,6 +1,48 @@
-# Getting Started with Create React App
+# Web Developer Test @Primavera Sound
+The purpose of this exercise is to show your ability to create a functional, modern and user friendly component. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The test
+
+I have been asked to create a multilanguage component. It must accept 4 languages, english, spanish, catalan and portuguese. All languages should be displayed in tabs.
+
+![Example Image](./test-2ewd.png)
+
+The component must submit a payload with the following schema:
+
+```javascript
+const payload: {
+  eventName: '',
+  title: {
+    en: '', 
+    es: '',
+    ca: '',
+    pt: '',
+  },
+  subtitle: {
+    en: '', 
+    es: '',
+    ca: '',
+    pt: '',
+  },
+  description: {
+    en: '', 
+    es: '',
+    ca: '',
+    pt: '',
+  },
+  capacity: 0
+}
+```
+## Technology stack
+
+- [i18 for react](https://www.i18next.com)
+- [React.js](https://es.reactjs.org) with [TypeScript](https://www.typescriptlang.org)
+- [Tailwind](https://tailwindcss.com)
+
+## Documentation
+
+* [The Exercise Statement](./EXERCISE.md)
+* [Helping Links for the test](./HELP.md)
 
 ## Available Scripts
 
@@ -39,32 +81,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
