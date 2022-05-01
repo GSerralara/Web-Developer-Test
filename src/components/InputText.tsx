@@ -1,4 +1,5 @@
 import React from 'react';
+import './../assets/InputText.css'
 export interface ITProps {
     name: string;
     valueInput?: String;
@@ -20,7 +21,7 @@ class InputText extends React.Component<ITProps,ITState>{
         return (
             <div id="InputTextWrapper">
                 <label id="InputTextLabel">{this.props.name}</label>
-                <input type="text" id="InputTextField" onChange={ e => this.handleOnChange(e) }/>
+                <textarea id="InputTextField" onChange={ e => this.handleOnChange(e) }/>
             </div>
         );
     }

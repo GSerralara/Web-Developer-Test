@@ -7,6 +7,7 @@ export interface INProps {
 interface INState {
     valueInput: Number;
 }
+
 class InputNumber extends React.Component<INProps, INState>{
     
     constructor(props:INProps) {
